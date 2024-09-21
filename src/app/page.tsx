@@ -3,14 +3,12 @@ import { Button } from "@/components/button/button";
 import { Header } from "@/components/header/header";
 import { Task } from "@/components/task/task";
 import { useTasks } from "@/context/task-provider";
-import { useRouter } from 'next/navigation';
-import styles from './page.module.scss';
 import { useRef } from "react";
 import AddTask, { AddTaskRef } from "../components/Modal/variants/add-task-modal/add-task-modal";
 import DeleteTask, { DeleteTaskRef } from "../components/Modal/variants/delete-task-modal/delete-task-modal";
+import styles from './page.module.scss';
 
 export default function Home() {
-  const router = useRouter();
   const { tasks, toggleTaskCompletion } = useTasks();
   const addTaskModalRef = useRef<AddTaskRef>(null)
   const deleteTaskModalRef = useRef<DeleteTaskRef>(null)

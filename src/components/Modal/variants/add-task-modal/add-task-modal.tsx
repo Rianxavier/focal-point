@@ -13,7 +13,9 @@ export interface AddTaskRef {
     close: () => void;
 }
 
-const AddTask = forwardRef((props: any, ref: ForwardedRef<AddTaskRef>) => {
+interface AddTaskProps { }
+
+const AddTask = forwardRef((props: AddTaskProps, ref: ForwardedRef<AddTaskRef>) => {
     const { addTask } = useTasks();
     const [title, setTitle] = useState('');
     const [error, setError] = useState(false);

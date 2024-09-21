@@ -12,7 +12,9 @@ export interface DeleteTaskRef {
     close: () => void;
 }
 
-const DeleteTask = forwardRef((props: any, ref: ForwardedRef<DeleteTaskRef>) => {
+interface DeleteTaskProps { }
+
+const DeleteTask = forwardRef((props: DeleteTaskProps, ref: ForwardedRef<DeleteTaskRef>) => {
     const { deleteTask } = useTasks();
 
     const [open, setOpen] = useState(false);

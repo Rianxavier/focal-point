@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import trash from '../../app/images/trash.png';
 import styles from './task.module.scss';
 
@@ -13,7 +12,6 @@ interface TaskProps {
 }
 
 export const Task = ({ ...props }: TaskProps) => {
-    const router = useRouter()
 
     return (
         <div className={styles.taskContainer} onClick={() => props.toggleTaskCompletion(props.id)}>
