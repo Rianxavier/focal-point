@@ -1,0 +1,29 @@
+.button {
+    height: 51px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px, 24px, 16px, 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.defaultButton {
+    background: linear-gradient(90deg, #0796D3 0%, #53C0F0 68.65%);
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.cancelButton {
+    background-color: #E7EEFB;
+    color: #000000;
+    font-weight: 400;
+}
+
+.deleteButton {
+    background: linear-gradient(90deg, #D30707 0%, #F05353 68.65%);
+    color: #FFFFFF;
+    font-weight: 500;
+}

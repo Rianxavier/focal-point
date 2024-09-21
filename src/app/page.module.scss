@@ -1,0 +1,43 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 56px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    gap: 50px;
+
+    @media (max-width: 890px) {
+        padding: 24px;
+    }
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    max-width: 450px;
+    max-height: 446px;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+}
+
+.titleList {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -2%;
+    color: rgba(0, 0, 0, 0.54);
+}
