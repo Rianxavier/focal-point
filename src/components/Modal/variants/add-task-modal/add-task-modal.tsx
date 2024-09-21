@@ -13,7 +13,7 @@ export interface AddTaskRef {
     close: () => void;
 }
 
-interface AddTaskProps { }
+interface AddTaskProps { name?: string }
 
 const AddTask = forwardRef((props: AddTaskProps, ref: ForwardedRef<AddTaskRef>) => {
     const { addTask } = useTasks();

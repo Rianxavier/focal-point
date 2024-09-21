@@ -12,7 +12,7 @@ export interface DeleteTaskRef {
     close: () => void;
 }
 
-interface DeleteTaskProps { }
+interface DeleteTaskProps { name?: string }
 
 const DeleteTask = forwardRef((props: DeleteTaskProps, ref: ForwardedRef<DeleteTaskRef>) => {
     const { deleteTask } = useTasks();
