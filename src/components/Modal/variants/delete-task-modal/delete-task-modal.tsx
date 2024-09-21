@@ -52,4 +52,6 @@ const DeleteTask = forwardRef((props: DeleteTaskProps, ref: ForwardedRef<DeleteT
     )
 })
 
+DeleteTask.displayName = "DeleteTask";
+
 export default DeleteTask;

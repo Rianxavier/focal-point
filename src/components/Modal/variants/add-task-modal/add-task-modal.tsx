@@ -70,4 +70,6 @@ const AddTask = forwardRef((props: AddTaskProps, ref: ForwardedRef<AddTaskRef>) 
     );
 })
 
+AddTask.displayName = "AddTask";
+
 export default AddTask;
